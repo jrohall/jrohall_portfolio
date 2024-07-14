@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+/* MAIN DEBUGGING CLASSES */
+
+.blue-debug {
+    border-color: aqua;
+    background-color: aqua;
+}
+
+.red-debug {
+    border-color: red;
+    background-color: red;
+}
+
+.black-debug {
+    border-color: black;
+    background-color: black;
+}
+
+/* THEME CONCERNS */
+.default-theme {
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    color: white;
+}
