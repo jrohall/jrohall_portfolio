@@ -1,0 +1,19 @@
+<nav-bar></nav-bar>
+
+<div class="container-fluid">
+    <div class="col">
+        <div class="row" style="margin-left: 20%; margin-right: 20%; margin-bottom: 10%;">
+            <h1 class="mb-3">The Building of Habs</h1>
+            <p class="">Mobile Development | Jul. 29, 2024 | Jeremiah Rohall</p>
+            <img src="gp-logo.png" class="m-3" style="height:20%;width:20%;">
+            <p class="mb-2">I'm thrilled to announce the successful launch of my first-ever mobile app, now available on the App Store and the web! This project has been a significant learning experience, as it was my first time working with Dart, Flutter, and FlutterFlow. While FlutterFlow simplified the front-end development process, getting comfortable with Flutter and Dart took some time and effort.</p>
+            <p class="mb-2">The journey began with designing the app's look and feel. I wanted to create a tool that helps users stay accountable with their habits, so I prioritized making the statistics front and center. I started by designing the home page with a GitHub-inspired heatmap to track monthly progress visually. This feature provides an instant overview of daily habits, making it easy and satisfying to maintain consistency. Below the heatmap, I added a habits menu where users can create, edit, and delete habits. The habits page itself was designed to be minimal and distraction-free, displaying only the habits due for the day. The profile page includes a user's name and profile picture for a personal touch, keeping the overall experience clean and focused.</p>
+            <p class="mb-2">One of the biggest challenges I faced was setting up authentication, as the app needed to support email, phone, Google, and Apple sign-ins. While Firebase made email and phone authentication straightforward, Google and Apple presented unique challenges due to platform-specific requirements. After extensive research and troubleshooting, I successfully implemented all authentication methods across different devices.</p>
+            <p class="mb-2">Once the design and authentication were in place, I focused on ensuring a smooth user experience using Firebase and Flutter functions. Initially, I stored each habit and daily statistic as individual documents, which quickly proved inefficient in terms of space and memory usage. To optimize this, I restructured the data storage by consolidating daily statistics into a single monthly document with an array representing each day. This change significantly improved data retrieval speed and reduced storage costs, a decision I'm sure will pay off in the long run.</p>
+            <p class="mb-2">Next, to offset storage costs, I implemented a subscription service through RevenueCat. Setting up the API for both the app and the app stores was challenging, particularly with the App Store. However, the effort was worth it, as I can now say that I've set up a working business model for the app.</p>
+            <p class="mb-2">To display the habits effectively, I used Flutter containers that accommodate each element in the array. A custom function calculates the percentage of habits completed and assigns a corresponding color, creating a heatmap similar to GitHub's.</p>
+            <p class="mb-5">While this app might seem simple, it has been a significant learning experience for me as a software engineer and as a person. Developing an app with cloud synchronization and a monetization system has been incredibly rewarding. While I don't expect to make money from this initial project, I'm confident that my skills and future projects will only improve. Thank you for reading!</p>
+            <a href="https://habsapp.flutterflow.app/" class="btn btn-primary">Visit Website</a>
+        </div>
+    </div>
+</div>
